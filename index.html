@@ -7,6 +7,7 @@
     <title>JRB CAPACITACIONES</title>
     <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <script defer src="stock.js"></script>
@@ -19,13 +20,7 @@
         <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
     </header>
 
-     <!-- <select id="filtroTalle">
-        <option value="all">Todos</option>
-        <option value="L">Large</option>
-        <option value="M">Medium</option>
-        <option value="S">Small</option>
-    </select>
- -->
+    
 
     <main id="contenedor-productos">
 
@@ -37,13 +32,14 @@
             <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
             <div id="carrito-contenedor">
                 <!-- <div class="productoEnCarrito">
-                    <p>Buzo 1</p>
-                    <p>Precio: $1200</p>
+                    <p>Curso Analisis Tecnico Avanzado </p>
+                    <p>Precio: $8000</p>
                     <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
                 </div> -->
             </div>
             <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
             <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+            <button id="comprar-carrito" class="boton-agregar">Comprar</button>
         </div>
     </div>
 </body>
