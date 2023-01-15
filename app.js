@@ -51,6 +51,7 @@ botonVaciar.addEventListener('click', () => {
     actualizarCarrito()
     })
 
+//boton comprar
     botonComprar.addEventListener('click', () => {
         carrito.length = 0
 
@@ -88,6 +89,11 @@ stockProductos.forEach((producto) => {
    
 
     boton.addEventListener('click', () => {
+        Swal.fire(
+            'Agregaste curso al Carrito!',
+            'Tu camino al exito esta mas cerca!',
+            'success'
+          )
        
         agregarAlCarrito(producto.id)
         
@@ -115,7 +121,7 @@ const agregarAlCarrito = (prodId) => {
     actualizarCarrito() 
 }
 
-
+// eliminar del carrito algun item
 
 const eliminarDelCarrito = (prodId) => {
     const item = carrito.find((prod) => prod.id === prodId)

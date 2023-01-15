@@ -162,3 +162,11 @@ p {
 .boton-eliminar:focus {
     outline: none;
 }
+
+#comprar-carrito{
+    background-color: rgb(53, 226, 22);
+}
+
+#vaciar-carrito{
+    background-color: rgb(214, 14, 21);
+}
