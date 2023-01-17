@@ -1,3 +1,5 @@
+
+
 const contenedorProductos = document.getElementById('contenedor-productos')
 
 
@@ -49,6 +51,7 @@ botonVaciar.addEventListener('click', () => {
         }
       })
     actualizarCarrito()
+
     })
 
 //boton comprar
@@ -70,7 +73,7 @@ botonVaciar.addEventListener('click', () => {
 
 
 
-//introducir el stock en el contenedor que hicimos en el html
+//introducir el stock en el contenedor que hicimos en el html 
 stockProductos.forEach((producto) => {
     const div = document.createElement('div')
     div.classList.add('producto')
@@ -100,7 +103,7 @@ stockProductos.forEach((producto) => {
     })
 })
 
-
+//AGREGAR AL CARRITO 
 const agregarAlCarrito = (prodId) => {
 
     
@@ -138,7 +141,9 @@ const eliminarDelCarrito = (prodId) => {
         text: 'El producto fue eliminado de su carrito correctamente!',
         
       })
-}
+    }
+
+    //ACTUALIZAR CARRITO
 
 const actualizarCarrito = () => {
    
@@ -168,3 +173,5 @@ const actualizarCarrito = () => {
 }
 
 // asdakfadcwdpvsdvkm commit
+
+
